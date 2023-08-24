@@ -1,0 +1,10 @@
+  <ul class="list">
+  <cdk-virtual-scroll-viewport  style="height: 500px" itemSize="1" >
+    <ng-container *cdkVirtualFor="let n of data">
+      <li> {{n.Leave}} </li>
+    </ng-container>
+  </cdk-virtual-scroll-viewport>
+</ul>
+  <h1>data</h1>
+  <!-- <p>{{data[1].Leave}}</p> -->
+  <p *ngFor="let n of data"><li>{{n.Leave}}</li></p>
